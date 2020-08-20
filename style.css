@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 90%;
+  margin: 10px auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 10px;
+  background-color: #f5f5f5;
+}
+.container1 p a{
+  text-decoration: none;
+  color: black;
+}
+.container1 p a:hover{
+  color: #ff4422;
+  text-decoration: underline;
+}
+.image-info {
+  height: 150px;
+  width: 300px;
+}
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container1 p {
+  width: inherit;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container1 p span {
+  color: #808080 !important;
+  font-weight: normal !important;
+  font-size: 12px;
+}
+.entire-card {
+  width: 95%;
+  margin: auto;
+}
+.card {
+  width: 20%;
+  position: relative;
+}
+.hammock {
+  background-color: #ff4422;
+  align-items: center;
+  height: 30px;
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.hammock h1 {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.hammock-logo {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+.price {
+  padding-top: 10px;
+  background-color: #ffebe7;
+  text-align: center;
+  margin-top: 0;
+  margin-top: 0;
+}
+.price p {
+  font-size: 15px;
+}
+.price #metre {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.price #seed {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+.finance {
+  margin-top: 0;
+  padding-top: 10px;
+  font-size: 12px;
+  background-color: #fffaf8;
+}
+.output {
+  font-size: 10px;
+  background-color: #fffaf8;
+}
+#hr {
+  color: #ffcdc2;
+}
+@media (max-width: 960px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #f5f5f5;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  .container1 {
+    position: relative;
+    display: flex;
+  }
+  .image-info {
+    padding-left: 5px;
+    width: 100px;
+    height: 70px;
+  }
+  .container1 p {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    right: 2px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
